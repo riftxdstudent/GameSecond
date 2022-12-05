@@ -80,9 +80,17 @@ public class Register extends AppCompatActivity {
                             startActivity(new Intent(getApplicationContext(), MainActivity.class));
                         } else {
                             Toast.makeText(Register.this, "Your User Register is failed :(", Toast.LENGTH_SHORT).show();
+                            pbRegister.setVisibility(View.GONE);
                         }
                     }
                 });
+            }
+        });
+
+        registerToLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), Login.class));
             }
         });
     }

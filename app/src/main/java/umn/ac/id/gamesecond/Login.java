@@ -71,9 +71,24 @@ public class Login extends AppCompatActivity {
                             startActivity(new Intent(getApplicationContext(), MainActivity.class));
                         } else {
                             Toast.makeText(Login.this, "Cannot Login, Email or Password incorrect!", Toast.LENGTH_SHORT).show();
+                            pbLogin.setVisibility(View.GONE);
                         }
                     }
                 });
+            }
+        });
+
+        btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), Login.class));
+            }
+        });
+
+        loginToRegister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), Register.class));
             }
         });
     }
