@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -29,7 +30,7 @@ public class Register extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-        getActionBar().hide();
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         etFullname = (EditText) findViewById(R.id.etFullname);
         etEmail = (EditText) findViewById(R.id.etEmail);
@@ -68,8 +69,6 @@ public class Register extends AppCompatActivity {
                     etPassword.setError("Password must be more than 5 characters");
                     return;
                 }
-
-                pbRegister.setVisibility(View.VISIBLE);
 
                 //Set the user data to Firebase
                 fAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
