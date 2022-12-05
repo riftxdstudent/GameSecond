@@ -15,7 +15,7 @@
         android:background="@drawable/search_background"
         android:drawableStart="@android:drawable/ic_menu_search"
         android:ems="10"
-        android:hint="Fint Your Gear Gaming"
+        android:hint="Find Your Gear Gaming"
         android:inputType="textPersonName"
         android:textSize="14sp"
         android:textStyle="italic"
