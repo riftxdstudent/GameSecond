@@ -61,7 +61,6 @@ public class Login extends AppCompatActivity {
                 }
 
                 //Cek user di Firebase
-
                 fAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
@@ -70,7 +69,6 @@ public class Login extends AppCompatActivity {
                             startActivity(new Intent(getApplicationContext(), MainActivity.class));
                         } else {
                             Toast.makeText(Login.this, "Cannot Login, Email or Password incorrect!", Toast.LENGTH_SHORT).show();
-                            pbLogin.setVisibility(View.GONE);
                         }
                     }
                 });
