@@ -76,7 +76,7 @@ public class Register extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()) {
                             Toast.makeText(Register.this, "Yay! User Register is successful!", Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                            startActivity(new Intent(getApplicationContext(), Login.class));
                         } else {
                             Toast.makeText(Register.this, "Your User Register is failed :(", Toast.LENGTH_SHORT).show();
                             pbRegister.setVisibility(View.GONE);
