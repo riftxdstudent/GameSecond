@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "330006020575",
+    "firebase_url": "https://gamesecond-c40b4-default-rtdb.firebaseio.com",
+    "project_id": "gamesecond-c40b4",
+    "storage_bucket": "gamesecond-c40b4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:330006020575:android:178f2f1b5601313052c46a",
+        "android_client_info": {
+          "package_name": "umn.ac.id.gamesecond"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "330006020575-u5bru5hkpk9od9n1q3hdl23kkk1al2re.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "umn.ac.id.gamesecond",
+            "certificate_hash": "b3297f2959b2f20a9594b4d57de56599bd332b37"
+          }
+        },
+        {
+          "client_id": "330006020575-n67ieh6roabg007r6948408smbpdqvmn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCd9wVkCe7-ozdMV_8_UKJpxGPpThxcetE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "330006020575-n67ieh6roabg007r6948408smbpdqvmn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

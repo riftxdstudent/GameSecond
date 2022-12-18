@@ -45,17 +45,17 @@ public class Login extends AppCompatActivity {
                 String email = etEmail.getText().toString().trim();
                 String password = etPassword.getText().toString().trim();
 
-                if(TextUtils.isEmpty(email)){
+                if (TextUtils.isEmpty(email)) {
                     etEmail.setError("Email is required");
                     return;
                 }
 
-                if(TextUtils.isEmpty(password)) {
+                if (TextUtils.isEmpty(password)) {
                     etPassword.setError("Password is Required");
                     return;
                 }
 
-                if(password.length() < 5) {
+                if (password.length() < 5) {
                     etPassword.setError("Password must be more than 5 characters");
                     return;
                 }
@@ -64,7 +64,7 @@ public class Login extends AppCompatActivity {
                 fAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-                        if(task.isSuccessful()) {
+                        if (task.isSuccessful()) {
                             Toast.makeText(Login.this, "Login Successful!", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(getApplicationContext(), MainActivity.class));
                         } else {
@@ -74,7 +74,7 @@ public class Login extends AppCompatActivity {
                 });
             }
         });
-        
+
         loginToRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

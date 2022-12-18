@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginStart="24dp"
+    android:layout_marginEnd="24dp"
+    app:cardCornerRadius="20dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="20dp"
+    app:cardBackgroundColor="#afb1b6"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nama"
+            android:text="Nama"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/idproduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:text="ID Product"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/nohp"
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="77dp"
+            android:text="089765654321"
+            android:textColor="#000000"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:id="@+id/address"
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="110dp"
+            android:text="Address"
+            android:textColor="#000000"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="20dp"/>
+
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

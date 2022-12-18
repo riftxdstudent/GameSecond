@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HalamanCheckOutActivity"
+    android:id="@+id/activityhalamancheckout"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#808080"
+    android:gravity="center">
+    
+    <TextView
+        android:text="Name:"
+        android:id="@+id/NameCheckout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20dp"/>
+    <EditText
+        android:id="@+id/insertyouname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:hint="Insert your Name" />
+    <TextView
+        android:text="Phone:"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/insertyounumber"
+        android:hint="Insert Your Phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/insertaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Address:"
+        android:textColor="@color/black"/>
+    <EditText
+        android:id="@+id/insertyouaddress"
+        android:hint="Insert Your Address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:text="ID Product"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:id="@+id/kodeproduk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/insertidproduct"
+        android:hint="Insert ID Product:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <Button
+        android:id="@+id/Buttonpayment"
+        android:text="Payment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:onClick="sendData"/>
+
+
+
+</LinearLayout>

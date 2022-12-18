@@ -1,22 +1,19 @@
 package umn.ac.id.gamesecond;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link NotificationFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class NotificationFragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
@@ -24,19 +21,11 @@ public class NotificationFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
+    RecyclerView listnotification;
+    NotificationAdapter adapter;
     public NotificationFragment() {
-        // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment NotificationFragment.
-     */
-    // TODO: Rename and change types and number of parameters
     public static NotificationFragment newInstance(String param1, String param2) {
         NotificationFragment fragment = new NotificationFragment();
         Bundle args = new Bundle();
@@ -58,7 +47,29 @@ public class NotificationFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_notification, container, false);
+        View view = inflater.inflate(R.layout.fragment_notification, container, false);
+
+        listnotification=(RecyclerView)view.findViewById(R.id.listnotification);
+        listnotification.setLayoutManager(new LinearLayoutManager(getContext()));
+
+        FirebaseRecyclerOptions<NotificationModel> options =
+                new FirebaseRecyclerOptions.Builder<NotificationModel>()
+                        .setQuery(FirebaseDatabase.getInstance().getReference().child("Order List"), NotificationModel.class)
+                        .build();
+
+        adapter = new NotificationAdapter(options);
+        listnotification.setAdapter(adapter);
+
+        return view;
+    }
+    @Override
+    public void onStart() {
+        super.onStart();
+        adapter.startListening();
+    }
+    @Override
+    public void onStop() {
+        super.onStop();
+        adapter.stopListening();
     }
 }

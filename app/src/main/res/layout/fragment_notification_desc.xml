@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotificationDescFragment"
+    android:background="#808080">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama:"
+        android:layout_marginTop="200dp"
+        android:textSize="25dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textColor="@color/black"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="ID Produk:"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:layout_marginLeft="10dp"
+        android:textSize="25dp"
+        android:layout_marginTop="350dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="No HP:"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:layout_marginLeft="10dp"
+        android:textSize="25dp"
+        android:layout_marginTop="450dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Alamat:"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:layout_marginLeft="10dp"
+        android:textSize="25dp"
+        android:layout_marginTop="550dp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="100dp">
+
+    <TextView
+        android:id="@+id/Nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="100dp"
+        android:text="Nama" />
+
+    <TextView
+        android:id="@+id/IDProduk"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ID Produk"
+        android:layout_marginTop="250dp"/>
+
+    <TextView
+        android:text="No HP"
+        android:id="@+id/NoHP"
+        android:layout_marginTop="350dp"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"/>
+    <TextView
+        android:text="Alamat"
+        android:textSize="25dp"
+        android:id="@+id/Alamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="450dp"/>
+
+    </FrameLayout>
+
+</FrameLayout>
