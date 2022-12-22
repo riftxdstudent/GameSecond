@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="umn.ac.id.gamesecond">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -15,6 +15,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GameSecond"
         tools:targetApi="31">
+        <activity
+            android:name=".DeleteProductActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".AddProductActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".HalamanCheckOutActivity"
             android:exported="false">

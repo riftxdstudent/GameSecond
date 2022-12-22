@@ -15,4 +15,21 @@
        android:textSize="30sp"
        android:textColor="@color/black"/>
 
+   <Button
+       android:id="@+id/addproduct"
+       android:layout_width="150dp"
+       android:layout_height="55dp"
+       android:layout_marginLeft="30dp"
+       android:layout_marginTop="200dp"
+       android:text="Add Product" />
+
+   <Button
+       android:id="@+id/deleteproduct"
+       android:layout_width="150dp"
+       android:layout_height="55dp"
+       android:layout_marginLeft="230dp"
+      android:layout_marginTop="200dp"
+       android:text="Delete Product"/>
+
+
 </FrameLayout>

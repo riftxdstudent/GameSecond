@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddProductActivity">
+
+
+    <ImageButton
+        android:id="@+id/firebaseimage"
+        android:layout_width="match_parent"
+        android:layout_height="262dp"
+        android:src="@drawable/imageinsert" />
+    <EditText
+        android:hint="Product Name"
+        android:id="@+id/productname"
+        android:layout_marginTop="290dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:hint="Detai Product"
+        android:id="@+id/detailproduct"
+        android:layout_marginTop="360dp"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"/>
+    <EditText
+        android:hint="Price"
+        android:id="@+id/priceproduct"
+        android:layout_marginTop="490dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/submit"
+        android:text="Add Product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="560dp"/>
+
+
+</RelativeLayout>
